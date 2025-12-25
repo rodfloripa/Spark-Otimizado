@@ -8,7 +8,7 @@ You need to have Docker installed in your system.
 
 To run the container, use `docker-compose up` in the root folder.
 
-Otimização do Spark
+## Otimização do Spark
 
 Aqui estão algumas dicas para otimizar o Spark e economizar recursos:
 
