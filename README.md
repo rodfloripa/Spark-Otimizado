@@ -219,8 +219,9 @@ Exemplo:
 4. Variáveis Locais vs. Globais
 O Python utiliza a regra LEGB para buscar variáveis, começando sempre pelo escopo local6666. Como o escopo local é menor, a busca é muito mais ágil do que no escopo global.
 
-    Exemplo:
-    Python
+Exemplo:
+
+    
     Menos eficiente
     contador_global = 0
     def teste_global():
@@ -241,8 +242,8 @@ O Python utiliza a regra LEGB para buscar variáveis, começando sempre pelo esc
 5. Encapsulamento em Classes
 Manter variáveis restritas a funções e classes ajuda o interpretador a gerenciar menos nomes simultaneamente, melhorando a performance e a gestão de memória.
 
-    Exemplo:
-    Python
+Exemplo:
+   
     class RetanguloEncapsulado:
         def __init__(self, largura, altura):
             self._largura = largura # Atributo protegido
@@ -258,14 +259,14 @@ Manter variáveis restritas a funções e classes ajuda o interpretador a gerenc
 6. List Comprehensions e Geradores
 As compreensões de lista são otimizadas internamente, sendo mais rápidas que o uso do método .append() dentro de um loop for tradicional.
 
-    Exemplo de List Comprehension:
-    Python
+Exemplo de List Comprehension:
+    
     Rápido
     quadrados = [x**2 for x in range(10)]
 
 
-    Exemplo de Expressão Geradora:
-    Python
+Exemplo de Expressão Geradora:
+
     Economiza memória (não cria a lista inteira de uma vez)
     soma_quadrados = sum(x**2 for x in range(1000000))
 
@@ -276,17 +277,17 @@ As compreensões de lista são otimizadas internamente, sendo mais rápidas que 
 7. Funções Built-in e NumPy
 Sempre prefira as funções nativas do Python (escritas em C) ou bibliotecas especializadas como o NumPy para processamento numérico.
 
-    Exemplo (Ordenação):
-    Python
-     Lento: Algoritmo manual (Bubble Sort)
+Exemplo (Ordenação):
+    
+    Lento: Algoritmo manual (Bubble Sort)
     def bubble_sort(arr): ... 
     
     Instantâneo: Função nativa
     sorted(meu_array)
 
 
-    Exemplo (Soma com NumPy):
-    Python
+Exemplo (Soma com NumPy):
+    
     import numpy as np
     Muito mais rápido que sum() do Python para arrays gigantes
     total = np.sum(array_numpy) 
