@@ -1,8 +1,0 @@
-.cache
-.ipython
-.jupyter
-.local
-data/big/
-data/partitioned/
-.ipynb_checkpoints
-\.wget-hsts
